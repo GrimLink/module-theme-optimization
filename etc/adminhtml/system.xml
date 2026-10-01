@@ -84,7 +84,8 @@
                         <comment><![CDATA[
                         <b>Yes:</b> Mini cart updates only after user interaction when page is restored from cache.<br>
                         <b>No:</b> Mini cart updates immediately on page restore.<br>
-                        <b>Recommended "Yes" to maintain optimal Page Speed and Core Web Vitals scores.</b>
+                        <b>Recommended "Yes" to maintain optimal Page Speed and Core Web Vitals scores.</b><br>
+                        Has no effect on Hyvä themes, Hyvä handles this natively.
                         ]]>
                         </comment>
                     </field>
@@ -92,7 +93,8 @@
                         <label>Auto Close Menu</label>
                         <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                         <comment><![CDATA[
-                        Automatically close open menus when page is restored from back/forward cache (for compatible themes).
+                        Automatically close open menus when page is restored from back/forward cache (for compatible themes).<br>
+                        Has no effect on Hyvä themes, Hyvä handles this natively.
                         ]]>
                         </comment>
                     </field>

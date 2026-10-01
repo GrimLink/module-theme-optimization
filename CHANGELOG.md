@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+- The bfcache handler script is no longer loaded on Hyvä themes. Hyvä handles bfcache restores natively (messages, cart drawer, menus and customer section data), so the script only duplicated that work. The bfcache response headers and URL exclusions still apply on Hyvä.
+- The **Update Mini Cart on User Interaction** and **Auto Close Menu** settings now note that they have no effect on Hyvä themes.
+
+### Removed
+- `view/frontend/templates/hyva/bfcache/handler.phtml`.
+
 ## [2.3.0] - 2026-05-11
 
 ### Added
