@@ -135,9 +135,9 @@ All values can be configured at Default, Website, and Store View scopes.
 * **Exclude Selectors** - CSS selectors for links to never preload. Enter one selector per line. (Default: .do-not-prerender)
 
 ### View Transitions
-* **Enable View Transitions** - Toggle animated page changes for storefront. (Default: Yes)
+* **Enable View Transitions** - Toggle animated page changes for storefront. (Default: Yes) Has no effect on Hyvä themes, Hyvä includes view transitions in its theme CSS.
 * **Enable View Transitions for Admin** - Enable transitions in Admin; disable if using a theme with built-in transitions. (Default: Yes)
-* **Apply on Back/Forward** - Show transitions when using browser navigation; can be disabled for faster restores. (Default: Yes)
+* **Apply on Back/Forward** - Show transitions when using browser navigation; can be disabled for faster restores. (Default: Yes) Has no effect on Hyvä themes.
 
 ## Contributors
 

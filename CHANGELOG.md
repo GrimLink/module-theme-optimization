@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+- The view transitions style and script are no longer loaded on Hyvä themes. Hyvä includes view transitions in its theme CSS, so the module output only duplicated it and overrode theme specific adjustments ([#32](https://github.com/mage-os/module-theme-optimization/issues/32)).
+- The **Enable View Transitions** and **Apply on Back/Forward** settings now note that they have no effect on Hyvä themes.
+
 ## [2.3.0] - 2026-05-11
 
 ### Added
