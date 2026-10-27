@@ -3,11 +3,13 @@
 ## [Unreleased]
 
 ### Changed
-- The bfcache handler script is no longer loaded on Hyvä themes. Hyvä handles bfcache restores natively (messages, cart drawer, menus and customer section data), so the script only duplicated that work. The bfcache response headers and URL exclusions still apply on Hyvä.
-- The **Update Mini Cart on User Interaction** and **Auto Close Menu** settings now note that they have no effect on Hyvä themes.
+- The bfcache handler script is no longer loaded on Hyvä themes, which already handle bfcache restores. The bfcache response headers and URL exclusions still apply ([#28](https://github.com/mage-os/module-theme-optimization/issues/28)).
 
 ### Removed
 - `view/frontend/templates/hyva/bfcache/handler.phtml`.
+
+### Fixed
+- Blank pages on navigation in the Facebook and Instagram in-app browser on Android. View transitions are now disabled in these in-app browsers ([#30](https://github.com/mage-os/module-theme-optimization/issues/30)).
 
 ## [2.3.0] - 2026-05-11
 

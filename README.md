@@ -36,12 +36,11 @@ All values can be configured at Default, Website, and Store View scopes.
 ### Back/Forward Cache
 
 * **Enable Back/Forward Cache** - Enable back/forward cache to store pages in browser memory temporarily for faster navigation. (Default: Yes)
-* **Update Mini Cart on User Interaction**
+* **Update Mini Cart on User Interaction** (except Hyvä)
   - Yes: Mini cart updates only after user interaction when page is restored from cache (Default)
   - No: Mini cart updates immediately on page restore
   - Recommended "Yes" to maintain optimal Page Speed and Core Web Vitals scores
-  - Has no effect on Hyvä themes, Hyvä reloads the mini cart natively on restore
-* **Auto Close Menu** - Automatically close open menus when page is restored from back/forward cache (for compatible themes). (Default: Yes) Has no effect on Hyvä themes, Hyvä closes its menus natively on restore.
+* **Auto Close Menu** - Automatically close open menus when page is restored from back/forward cache (for compatible themes, except Hyvä). (Default: Yes)
 * **Exclude URLs** - Optional configuration to exclude specific URL patterns from back/forward cache. Enter URL parts (substring), one per line. The extension automatically excludes non-cacheable URLs, so this is only needed for custom cached URLs that load private data via JavaScript.
 
 > [!IMPORTANT]  
