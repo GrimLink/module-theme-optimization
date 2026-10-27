@@ -3,8 +3,14 @@
 ## [Unreleased]
 
 ### Changed
-- The view transitions style and script are no longer loaded on Hyvä themes. Hyvä includes view transitions in its theme CSS, so the module output only duplicated it and overrode theme specific adjustments ([#32](https://github.com/mage-os/module-theme-optimization/issues/32)).
-- The **Enable View Transitions** and **Apply on Back/Forward** settings now note that they have no effect on Hyvä themes.
+- The bfcache handler script is no longer loaded on Hyvä themes, which already handle bfcache restores. The bfcache response headers and URL exclusions still apply ([#28](https://github.com/mage-os/module-theme-optimization/issues/28)).
+- The view transitions style and script are no longer loaded on Hyvä themes. Hyvä includes view transitions in its theme CSS, and the module output overrode theme adjustments ([#32](https://github.com/mage-os/module-theme-optimization/issues/32)).
+
+### Removed
+- `view/frontend/templates/hyva/bfcache/handler.phtml`.
+
+### Fixed
+- Blank pages on navigation in the Facebook and Instagram in-app browser on Android. View transitions are now disabled in these in-app browsers ([#30](https://github.com/mage-os/module-theme-optimization/issues/30)).
 
 ## [2.3.0] - 2026-05-11
 

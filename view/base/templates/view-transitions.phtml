@@ -19,6 +19,23 @@ $style = <<<CSS
 CSS;
 echo $secureRenderer->renderTag('style', [], $style, false);
 
+/*
+ * The Facebook and Instagram apps on Android ship their own Chromium based WebView, which starts the
+ * cross-document view transition but never finishes it, so the page stays blank after navigating.
+ * Inserted after the style above, so it wins and disables the transition in these in-app browsers.
+ */
+$inAppBrowserScript = <<<JS
+    (() => {
+        const userAgent = navigator.userAgent;
+        if (!/android/i.test(userAgent) || !/FBAN|FBAV|FB_IAB|Instagram/.test(userAgent)) return;
+
+        const style = document.createElement('style');
+        style.textContent = '@view-transition { navigation: none; }';
+        document.currentScript.after(style);
+    })();
+JS;
+echo $secureRenderer->renderTag('script', [], $inAppBrowserScript, false);
+
 if ($viewModel->isEnabledForBfcache() === false) {
     $script = <<<JS
         window.addEventListener('pagereveal', (e) => {
