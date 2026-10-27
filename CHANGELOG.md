@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+### Fixed
+- Blank pages on navigation in the Facebook and Instagram in-app browser on Android. View transitions are now disabled in these in-app browsers ([#30](https://github.com/mage-os/module-theme-optimization/issues/30)).
+
 ## [2.3.0] - 2026-05-11
 
 ### Added
